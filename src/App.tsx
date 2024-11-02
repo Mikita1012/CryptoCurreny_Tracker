@@ -18,6 +18,8 @@ const App: React.FC = () => {
           'https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum,dogecoin&vs_currencies=usd'
         );
         setCryptoData(response.data)
+        console.log(response.data);
+        
       } catch (err) {
         setError("Failded to fetch cryptocurrency data. ")
       }
